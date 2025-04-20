@@ -57,6 +57,7 @@
     intermediate level planning, and low-level (fast) control. All datasets, reasoning models, and control policies 
     are downloadable via huggingface hub.
     <br>
+    <br>
     The starting kit containing the simulator, assets, APIs, and documentation on the scenarios as well as the required 
     datasets, models, and policies will be released on <b>June 1st</b>. There will be code stubs so that participants can get 
     started quickly as well as evaluate on VALIDATION set locally. 
@@ -64,8 +65,14 @@
     <h2>Evaluation</h2>
     There are two classes of metrics that will act as the performance indicators for the challenge. 
     <ul>
-        <li><strong>Task-specific Metrics:</strong> Inherently sparse and directly corresponding to the final states expected of the simulated world. An example is bringing a difficult to locate tool from the workshop building to the kitchen and using it to open a stuck cabinet. The metric is simply that the cabinet is past a threshold in its continuous state that is considered "open".</li>
-        <li><strong>General Metrics:</strong> Continuous signals that are useful for measuring behavior characteristics, irrespective of task completion. These can be measured quantities including:
+        <li><strong>Task-specific Metrics:</strong> 
+            Inherently sparse and directly corresponding to the final states expected of the simulated world. 
+            An example is bringing a difficult to locate tool from the workshop building to the kitchen and using it to open a stuck cabinet. 
+            The metric is simply that the cabinet is past a threshold in its continuous state that is considered "open".
+        </li>
+        <li><strong>General Metrics:</strong> 
+            Continuous signals that are useful for measuring behavior characteristics, irrespective of task completion. 
+            These can be measured quantities including:
             <ul>
                 <li>Time to complete the objective</li>
                 <li>Total resources consumed (for example energy as computed w.r.t the joint torques)</li>
