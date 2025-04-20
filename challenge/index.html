@@ -51,6 +51,20 @@
     <h2>Challenge</h2>
 
     <h2>Resources and Datasets</h2>
+    
+    The baseline solutions for the TRAIN scenarios will be provided as teleoperated (human-collected) demonstrations 
+    that achieve satisfactory performance w.r.t. the task-specficic metrics, proving feasibility for each task.
+    Note that in general the solutions to scenarios can require a mixture of high-level (slow) reasoning, 
+    intermediate level planning, and low-level (fast) control.  
+
+    We will provide a set of pre-trained policies for low-level control, especially in the context of locomotion.
+    Our teleoperation examples will utilize autonomy on the low-level, but use human provided demonstrations at the high-level 
+    (for example reasoning about where to navigate to and what to manipulate).
+    All datasets, reasoning models, and control policies are downloadable via huggingface hub.
+    
+    The starting kit containing the simulator, assets, APIs, and documentation on the scenarios as well as the required 
+    datasets, models, and policies will be released on June 1st. There will be code stubs so that participants can get 
+    started quickly as well as evaluate on VALIDATION set locally. 
 
     <h2>Evaluation</h2>
     There are two classes of metrics that will act as the performance indicators for the challenge. 
